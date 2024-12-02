@@ -23,8 +23,7 @@ def find_smallest_numbers(first_list, second_list):
 def distance_pairs(pairs):
     total_distance = 0
     for _, (first, second) in pairs.items():
-        distance = abs(first - second)
-        total_distance += distance
+        total_distance += abs(first - second)
     return total_distance
 
 file_path = Path(__file__).with_name('input')
