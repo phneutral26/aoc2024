@@ -11,16 +11,8 @@ def is_safe_sequence(numbers):
     return True
 
 def is_safe_row(numbers):
-    if is_safe_sequence(numbers):
-        return True
+    return is_safe_sequence(numbers)
 
-    # Try removing each level and check if it becomes safe
-    for i in range(len(numbers)):
-        modified_numbers = numbers[:i] + numbers[i+1:]
-        if is_safe_sequence(modified_numbers):
-            return True
-
-    return False
 def process_input(filename):
     safe_rows = 0
     total_rows = 0
