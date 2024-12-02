@@ -1,3 +1,4 @@
+from pathlib import Path
 def read_input_file(file_path):
     with open(file_path, 'r') as file:
         first_numbers = []
@@ -27,7 +28,7 @@ def distance_pairs(pairs):
     return total_distance
 
 # Test the functions
-file_path = 'input'
+file_path = Path(__file__).with_name('input')
 first_list, second_list = read_input_file(file_path)
 pairs = find_smallest_numbers(first_list, second_list)
 print("Pairs:", pairs)
