@@ -19,7 +19,6 @@ def calculate_similarity_score(left_list, right_list):
     
     return similarity_score
 
-# Test the function
 file_path = 'input'
 left_list, right_list = read_input_file(file_path)
 similarity_score = calculate_similarity_score(left_list, right_list)
