@@ -64,5 +64,4 @@ def main():
     print(p2(values, invalid))
 
 
-if __name__ == '__main__':
-    main()
+main()
